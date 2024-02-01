@@ -29,9 +29,9 @@ export class AppService {
         };
       }
 
-      const messageId = verifyObj?.event?.message?.message_id;
+      const messageId = verifyObj?.uuid;
 
-      const messageContent = verifyObj?.event?.message?.content || '';
+      const messageContent = verifyObj?.event;
       const messageContentObj = JSON.parse(messageContent);
       console.log(messageId, messageContentObj);
     } catch (error) {
