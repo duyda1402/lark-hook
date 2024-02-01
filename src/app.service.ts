@@ -29,11 +29,9 @@ export class AppService {
         };
       }
 
-      const messageId = verifyObj?.uuid;
-
-      const messageContent = verifyObj?.event;
-      const messageContentObj = JSON.parse(messageContent);
-      console.log(messageId, messageContentObj);
+      const eventId = verifyObj?.uuid;
+      const eventContent = verifyObj?.event;
+      console.log(eventId, eventContent);
     } catch (error) {
       this.logger.error(`eventWebhook get error = ${error.stack}`);
     }
