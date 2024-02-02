@@ -5,8 +5,8 @@ import axios from 'axios';
 @Injectable()
 export class AppService {
   logger = new Logger(AppService.name);
-  private readonly LARK_API_URL = 'https://open.larksuite.com';
-  private LARK_APP_ID = 'cli_a531f91211f8d010';
+  //private readonly LARK_API_URL = 'https://open.larksuite.com';
+  //private LARK_APP_ID = 'cli_a531f91211f8d010';
   private LARK_ENCRYPT_KEY = '8W2Zgbw3WpCRdJawciwfFcAglvFiK1PU';
   private nFLOW_URL_UPLOAD =
     'https://banca_predev2.nflow.staging.nuclent.com/v1/f/apiApprovalRequestSystem';
