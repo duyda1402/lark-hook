@@ -46,7 +46,6 @@ export class AppService {
         instanceCode,
         status,
       });
-      console.log(res);
       if (res.data.statusCode !== 200) {
         this.logger.error('Error Uploading Status: ' + res.data.message);
       } else {
